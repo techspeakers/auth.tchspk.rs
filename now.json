@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "public": false,
+  "alias": "auth.tchspk.rs",
+  "env": {
+    "MONGODB_HOST": "@mongodb-host",
+    "MONGODB_USER": "@mongodb-user",
+    "MONGODB_PASSWORD": "@mongodb-password",
+    "AUTH_DOMAIN": "@auth-tchspk-rs-domain",
+    "AUTH_CLIENT_ID": "@auth-tchspk-rs-client-id",
+    "AUTH_CLIENT_SECRET": "@auth-tchspk-rs-client-secret"
+  },
+  "builds": [
+    { "src": "/index.js", "use": "@now/node-server" },
+    { "src": "/www", "use": "@now/static" }
+  ],
+  "routes": [
+    { "src": "/(login|redirect_url|logged_out|info)", "dest": "/index.js" }
+  ]
+  ,"regions": ["gru"]
+}
