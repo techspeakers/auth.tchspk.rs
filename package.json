@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/techspeakers/auth.tchspk.rs#readme",
   "dependencies": {
-    "@techspeakers/mongoclient": "^0.2.0",
+    "@techspeakers/mongoclient": "^0.2.1",
     "body-parser": "^1.18.3",
     "connect-mongodb-session": "^2.1.1",
     "cookie-parser": "^1.4.4",
