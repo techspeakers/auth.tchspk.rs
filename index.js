@@ -22,7 +22,6 @@ app.use(session({
   secret: process.env['AUTH_CLIENT_ID'],
   cookie: {
     maxAge: 1000 * 60 * 60 * 24, // 1 day
-    secure: true
   },
   store,
   resave: true,

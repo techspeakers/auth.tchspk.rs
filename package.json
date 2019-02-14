@@ -1,6 +1,6 @@
 {
   "name": "auth.tchspk.rs",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "TechSpeakers Mozilla IAM OIDC authenticator",
   "main": "index.js",
   "scripts": {
